@@ -29,11 +29,7 @@ pipeline {
 
      	}
 
-     	}
-     	post{
-     		success{
-     			archiveArtifacts artifacts: '**', fingerprint:true
-     			sh 'dotnet HelloHiApi/bin/Release/netcoreapp2.1/HelloHiApi.dll'
-     		}
+     	
+     	
     }
 }
