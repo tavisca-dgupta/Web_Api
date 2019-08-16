@@ -24,13 +24,10 @@ pipeline {
      	}
      	stage('Test'){
             steps{
-<<<<<<< HEAD
+
                 echo 'Test project'
                 bat 'dotnet test  %testName% -p:Configuration=release -v:q'
-=======
-                     		echo 'Test project'
-                bat 'dotnet test HelloHiApi.Test/HelloHiApi.Test.csproj -p:Configuration=release -v:q'
->>>>>>> 15f0f6c21e6e09a501dc924c27f9c0c6181fce6a
+
                 }
 
      	}
