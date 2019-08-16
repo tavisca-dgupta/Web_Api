@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>f17540ff-3ca1-4d02-b8d2-a4965a163249</ProjectGuid>
+    <ProjectGuid>9287e602-4a57-438b-958a-0d537a2f2682</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/values</DockerServiceUrl>
     <DockerServiceName>hellohiapi</DockerServiceName>
