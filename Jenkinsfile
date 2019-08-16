@@ -35,6 +35,7 @@ pipeline {
                         sh 'docker build -t HelloHiApi -f dockerfile .'
                         sh 'docker run --rm -p 8004:8004/tcp HelloHiApi:latest'
             }
+        }
 
      	
     }
