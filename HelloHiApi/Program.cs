@@ -19,6 +19,6 @@ namespace HelloHiApi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>().UseUrls(urls:"http://*:4897");
+                .UseStartup<Startup>().UseUrls(urls:"http://*:80");
     }
 }

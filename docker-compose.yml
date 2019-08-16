@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY-}hellohiapi
     build:
       context: .
-      dockerfile: HelloHiApi\Dockerfile
+      dockerfile: HelloHiApi/Dockerfile
