@@ -10,7 +10,7 @@ pipeline {
             steps{
 
                 echo 'Restoring packages'
-                bat 'dotnet restore'
+                bat 'dotnet restore %solutionName% '
                        
             }
         }
