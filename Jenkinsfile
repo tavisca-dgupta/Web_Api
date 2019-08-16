@@ -4,27 +4,27 @@ pipeline {
         stage('Restore') {
             steps{
                             echo 'Restoring packages'
-                sh 'dotnet restore'
+                bat 'dotnet restore'
             }
         }
      	stage('Build'){
             steps{
                      		echo 'build project'
-                sh 'dotnet build HelloHiApi.sln -p:Configuration=release -v:q'
+                bat 'dotnet build HelloHiApi.sln -p:Configuration=release -v:q'
             }
 
      	}
      	stage('Test'){
             steps{
                      		echo 'Test project'
-                sh 'dotnet test HelloHiApi.Test/HelloHiApi.Test.csproj -p:Configuration=release -v:q'
+                bat 'dotnet test HelloHiApi.Test/HelloHiApi.Test.csproj -p:Configuration=release -v:q'
                 }
 
      	}
      	stage('Publish'){
             steps{
                      		echo 'publish project'
-                sh 'dotnet publish'
+                bat 'dotnet publish'
             }
 
      	}
@@ -32,8 +32,8 @@ pipeline {
         stage('deploy') {
 
             steps {
-                        sh 'docker build -t HelloHiApi -f dockerfile .'
-                        sh 'docker run --rm -p 8004:8004/tcp HelloHiApi:latest'
+                        bat 'docker build -t HelloHiApi -f dockerfile .'
+                        bat 'docker run --rm -p 8004:8004/tcp HelloHiApi:latest'
             }
         }
 
