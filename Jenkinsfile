@@ -4,7 +4,7 @@ pipeline {
         stage('Restore') {
             steps{
                             echo 'Restoring packages'
-                bat 'dotnet restore'
+                bat 'dotnet restore HelloHiApi.sln'
             }
         }
      	stage('Build'){
