@@ -43,8 +43,8 @@ pipeline {
         stage('deploy') {
             steps {
                         echo 'run docker'
-                        bat 'docker build --tag HelloHiApi -f dockerfile .'
-                        bat 'docker run --rm -p 4000:11180/tcp HelloHiApi'
+                        bat 'docker build --tag hellohiapi -f dockerfile .'
+                        bat 'docker run --rm -p 4000:11180/tcp hellohiapi'
 
             }
         }
